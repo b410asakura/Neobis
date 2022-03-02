@@ -1,0 +1,19 @@
+1. CREATE DATABASE sewind_business
+
+2. CREATE Maven project
+
+3. ADD JDBC driver DEPENDENCIES in POM.XML
+
+4. CREATE getConnection method
+
+5. CREATE addData method
+
+6. CREATE selectData method
+
+7. CREATE updateData method
+
+8. CREATE deleteData method
+
+9. CONNECT to DATABASE
+
+10. TEST all methods
