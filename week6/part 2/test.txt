@@ -1,0 +1,68 @@
+1. get all customers
+2. @GetMapping(path = "/getCustomers")
+3. 
+4. [
+  {
+    "customerId": 33,
+    "firstName": "Armin",
+    "lastName": "Arlert",
+    "phoneNumber": "+654 61 331",
+    "email": "mozg@gmail.com",
+    "city": "Shiganshina",
+    "country": "Paradise"
+  }
+]
+
+Response code: 200; Time: 69ms; Content length: 154 bytes
+
+
+
+1. Get customer by id
+2. @GetMapping(path = "/getCustomers/{customerId}")
+3. (@PathVariable("customerId") Long customerId)
+4. {
+  "customerId": 33,
+  "firstName": "Armin",
+  "lastName": "Arlert",
+  "phoneNumber": "+654 61 331",
+  "email": "mozg@gmail.com",
+  "city": "Shiganshina",
+  "country": "Paradise"
+}
+
+Response code: 200; Time: 77ms; Content length: 152 bytes
+
+
+
+1. post one customer
+2. @PostMapping(path = "/addNewCustomer")
+3. (@RequestBody Customer customer)
+4. {
+  "customerId": 35,
+  "firstName": "Jan",
+  "lastName": "Fridrih",
+  "phoneNumber": "+654 65 531",
+  "email": "JanKapitan@gmail.com",
+  "city": "Shiganshina",
+  "country": "Paradise"
+}
+
+Response code: 200; Time: 174ms; Content length: 157 bytes
+
+
+
+1. delete one customer
+2. @DeleteMapping(path = "/deleteCustomer/{customerId}")
+3. (@PathVariable("customerId") Long customerId)
+4. <Response body is empty>
+
+Response code: 200; Time: 139ms; Content length: 0 bytes
+
+
+
+1. update one customer
+2. @PutMapping(path = "/updateCustomer/{customerId}")
+3. (@PathVariable("customerId") Long customerId, @RequestBody Customer newCustomer)
+4. <Response body is empty>
+
+Response code: 200; Time: 167ms; Content length: 0 bytes
